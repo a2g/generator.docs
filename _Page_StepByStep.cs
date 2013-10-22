@@ -3,14 +3,12 @@
 /*!
 @page StepByStep
 <h2>Step-by-step</h2>
-The a2g Code Generator generates code to help link the images of a room with the 
-code of an authored room. This can be done manually, but code generation has benefits:
-- it replaces a whole lot of repetitive hand coding.
-- it generates codes. See @ref Codes
-- it generates special codes @ref SpecialPropertiesOfCodesMadeByCodeGeneration
-
-But to recieve these benefits you need to layout your game images in a 
-strict structure of folders. The structure is perhaps best illustrated by describing
+So a2g.generator is a tool that generates the java code that links imags in to a2g.
+Whilst doing so it crops the images for a bit of animage size saving. And it also generates
+symbolic constant files o.java, a.java and i.java,
+which are for objects, inventory and animations respectively.
+It figures out the names of the objects, inventory item and animations by expecting the source images to be laid out in a strict structure.
+The structure is perhaps best illustrated by describing
 what the code generator looks for when it traverses a root folder.
 
 1. The code generator takes the root folder and recurses that folder looking for folders
