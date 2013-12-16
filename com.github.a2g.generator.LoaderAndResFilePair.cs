@@ -1,6 +1,6 @@
 
 /*!
-@class com.github.a2g.generator.LoaderAndResFilePair
+@class com::github::a2g::generator::LoaderAndResFilePair
 @brief generates one of the many loader files, that hold perform image loading:
 Only0.java
 OnlyLoader.java

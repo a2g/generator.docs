@@ -1,5 +1,5 @@
 /*!
-@class com.github.a2g.generator.FileSystem
+@class com::github::a2g::generator::FileSystem
 So this needs to simulate a hierarchical series of folders and the files 
 that are in them.  You'd think some type of tree structure would be the apt thing,
 but for unit testing purposes.

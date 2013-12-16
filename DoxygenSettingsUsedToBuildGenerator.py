@@ -1568,7 +1568,7 @@ CLASS_DIAGRAMS         = YES
 # the mscgen tool resides. If left empty the tool is assumed to be found in the 
 # default search path.
 
-MSCGEN_PATH            = 
+MSCGEN_PATH            = "e:\Program Files\mscgen\bin"
 
 # If set to YES, the inheritance and collaboration graphs will hide 
 # inheritance and usage relations if the target is undocumented 
@@ -1581,7 +1581,7 @@ HIDE_UNDOC_RELATIONS   = YES
 # toolkit from AT&T and Lucent Bell Labs. The other options in this section 
 # have no effect if this option is set to NO (the default)
 
-HAVE_DOT               = NO
+HAVE_DOT               = YES
 
 # The DOT_NUM_THREADS specifies the number of dot invocations doxygen is 
 # allowed to run in parallel. When set to 0 (the default) doxygen will 
@@ -1703,7 +1703,7 @@ INTERACTIVE_SVG        = NO
 # The tag DOT_PATH can be used to specify the path where the dot tool can be 
 # found. If left blank, it is assumed the dot tool can be found in the path.
 
-DOT_PATH               = "C:\Program Files\Graphviz\bin"
+DOT_PATH               = "e:\Program Files\Graphviz\bin"
 
 # The DOTFILE_DIRS tag can be used to specify one or more directories that 
 # contain dot files that are included in the documentation (see the 
