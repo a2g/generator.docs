@@ -3,6 +3,95 @@
 /*!
 @page StepByStep
 <h2>Step-by-step</h2>
+
+@msc
+ arcgradient = 8;
+
+ a [label="Client"],b [label="ViewerForABAP"];
+ a=>b [label="SAP_LOAD_VIEWER_SINGLE"];
+ a<=b [label="SAP_LOAD_DONE"];
+@endmsc
+
+
+@msc
+ arcgradient = 8;
+
+ a [label="Client"],b [label="ViewerForABAP"];
+ a=>b [label="SAP_LOAD_VIEWER_ASSEMBLY"];
+ a<=b [label="SAP_LOAD_DONE"];
+@endmsc
+
+
+@msc
+ arcgradient = 8;
+
+ a [label="Client"],b [label="ViewerForABAP"];
+ 
+ a<=b [label="SAP_VISUALIZATION"];
+ a=>b [label="SAP_VISUALIZATION_RESPONSE"];
+@endmsc
+
+@msc
+ arcgradient = 8;
+
+ a [label="Client"],b [label="ViewerForABAP"];
+ a=>b [label="SAP_GET_STEP_PROPERTIES"];
+ a<=b [label="SAP_STEP_PROPERTIES"];
+@endmsc
+
+@msc
+ arcgradient = 8;
+
+ a [label="Client"],b [label="ViewerForABAP"];
+ a=>b [label="SAP_REMOVE"];
+ a<=b [label="SAP_REMOVE_DONE"];
+@endmsc
+
+@msc
+ arcgradient = 8;
+
+ a [label="Client"],b [label="ViewerForABAP"];
+ a=>b [label="SAP_GET_METADATA"];
+ a<=b [label="SAP_METADATA"];
+@endmsc
+
+
+@msc
+ arcgradient = 8;
+
+ a [label="Client"],b [label="ViewerForABAP"];
+
+ a=>b [label="SAP_SAVE_SNAPSHOT"];
+ a<=b [label="SAP_SAVE_SNAPSHOT_DONE"];
+@endmsc
+
+
+@msc
+ arcgradient = 8;
+
+ a [label="Client"],b [label="ViewerForABAP"];
+
+ a<=b [label="SAP_SET_LAYER_CHANGE"];
+ ---  [ label = ""];
+ a<=b [label="SAP_SET_LAYER_CHANGE"];
+ ---  [ label = ""];
+ a=>b [label="SAP_SAVE_LAYER"];
+ a<=b [label="SAP_SAVE_LAYER_DONE"];
+@endmsc
+
+
+@msc
+ arcgradient = 8;
+
+ a [label="Client"],b [label="ViewerForABAP"];
+="ack1, nack2"];
+ a=>b [label="data2", arcskip="1"];
+ |||;
+ a<=b [label="ack3"];
+ |||;
+@endmsc
+
+  
 So a2g.generator is a tool that generates the java code that links imags in to a2g.
 Whilst doing so it crops the images for a bit of animage size saving. And it also generates
 symbolic constant files o.java, a.java and i.java,
